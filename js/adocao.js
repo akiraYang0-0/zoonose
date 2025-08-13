@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    // Depois você vai trocar por getAnimaisParaAdocao() que chama seu backend
+    
     const animais = [
         { id: 1, nome: "Luna", especie: "Cachorro", idade: "2 anos", foto: "img/luna.jpg" },
         { id: 2, nome: "Toby", especie: "Gato", idade: "1 ano", foto: "img/toby.jpg" },
