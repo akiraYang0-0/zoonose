@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuHTML = `
         <div class="header">
-            <h1>ZoonoSys</h1>
+            <h1>ZoonoSys <a href="comunicativo.html"</a></h1>
             <p>Vigilância, Prevenção e Controle de Zoonoses</p>
             <nav>
                 <ul>
