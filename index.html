@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* estilo do login (mantive o seu) */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* important: menu aparece no topo */
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 29px;
+      box-shadow: 8px 8px 20px rgba(0,0,0,0.15);
+      width: 382px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    h1, h2 { margin-bottom: 20px; }
+    input {
+      width: 74%;
+      padding: 11px;
+      margin: 4px 0;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+    }
+    button {
+      width: 40%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    
+    button:hover { background: #45a049; }
+    .mensagem { margin-top: 10px; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+
+
+  <div class="container">
+    <h1>Bem-vindo!!</h1>
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <p class="mensagem" id="mensagem"></p>
+  </div>
+
+  <!-- ordem: primeiro menu.js (define carregarMenu), depois script.js (define login) -->
+  <script src="script.js"></script>
+
+
+</body>
+</html>
