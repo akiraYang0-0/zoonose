@@ -18,13 +18,18 @@
     }
 
     .container {
-      background: white;
-      padding: 20px;
-      border-radius: 29px;
-      box-shadow: 8px 8px 20px rgba(0,0,0,0.15);
-      width: 382px;
-      text-align: center;
-      margin-top: 30px;
+      
+     background-color: rgba(255, 255, 255, 0.85); /* fundo claro e suave */
+    padding: 15px;
+    display:flexbox;
+    place-items: center; /* centraliza no meio */
+    height: 50vh;
+    margin: 0%;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    gap: 20px; /* espaçamento entre os cards */
+    flex-wrap: wrap; /* quebra em linha nova no celular */
     }
     h1, h2 { margin-bottom: 20px; }
     input {
