@@ -24,26 +24,48 @@
         .main {
             padding: 20px;
         }
+       
         .hero-text {
-            text-align: center;
-            margin-bottom: 5px;
-            background-color: rgba(255, 255, 255, 0.85); /* fundo claro e suave */
-             padding: 20px;
-             max-width: 150px;
-            border-radius: 12px;
-             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-             transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 12px;
+    max-width: 140px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+}
 
-        }
-        .hero-text p{
-              color: #333;
-              margin-bottom: 10px;
+/* Checkbox escondido */
+.hero-text input[type="checkbox"] {
+    display: none;
+}
 
-        }
-        .hero-text h2{
-              color: #333;
-              margin-bottom: 10px;
-        }
+/* Estilo do link como botão discreto */
+.hero-text label {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #333;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.hero-text h2{
+     color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-text label:hover {
+    background: #007bff;
+    color: white;
+}
+
+
+        
         .btn-logout {
             background: red;
             color: white;
@@ -51,16 +73,7 @@
             border-radius: 4px;
             text-decoration: none;
         }
-        .hero-text button{
-             padding: 10px 15px;
-            margin-top: 10px;
-            background: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-
-        }
+      
         .services {
             display: flex;
             gap: 20px;
@@ -68,7 +81,7 @@
             justify-content: center;
         }
         .services {
-    display: flex;
+    display:-moz-grid-group;
     justify-content: center;
     gap: 20px; /* espaçamento entre os cards */
     flex-wrap: wrap; /* quebra em linha nova no celular */
@@ -157,11 +170,13 @@
 
 <main class="main">
     <section>
-        <div class="hero-text">
-            <a href="#" class="btn-logout" id="logoutBtn">Sair</a>
-            <h2>Adote um Amigo</h2>
-            <button id="btnAcessar">Acesse aqui!</button>
-        </div>
+       <div class="hero-text">
+    <h2>Adote um Amigo</h2>
+    
+    <input type="checkbox" id="acessar" onclick="if(this.checked){window.location.href='detalhes.html';}">
+    <label for="acessar">Acesse aqui</label>
+</div>
+
     </section>
     
     <section class="services">
