@@ -197,11 +197,23 @@
             <p>Receba atendimento especializado para o seu pet.</p>
             <button class="service-button" id="btnAgendar">Agendar</button>
         </div>
+
+        <div class="service" id="cardEdital">
+
+        <h3>Carregando...</h3>
+        <p>Aguarde, buscando informações do edital.</p>
+       <button class="service-button" onclick="window.location.href='user/edital.html'">Ver mais</button>
+</div>
     </section>
 </main>
 
+       <script>
+        document.getElementById("cardEdital").addEventListener("click", function(){
+            window.location.href = "user/edital.html"
+        });
+      
 
-<script>
+
     document.getElementById("logoutBtn").addEventListener("click", function() {
         alert("Você foi deslogado.");
     });
