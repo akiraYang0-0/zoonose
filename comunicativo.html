@@ -218,12 +218,18 @@
   display: flex;
   justify-content: center;
   margin: 50px auto; /* <- centraliza horizontalmente */
-  min-height: 50vh;
+  min-height: 35vh;
 
+}
+.card iframe {
+    border: none;           /* Remove a borda */
+    width: 100%;             /* Faz o iframe ocupar toda a largura do card */
+    height: 400px;           /* Ajuste para o tamanho que quiser */
+    overflow: visible;       /* Garante que não corte o conteúdo */
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
   .card-button {
@@ -236,6 +242,7 @@
                         margin-top: 10px;
 
         }
+        
         </style>
 
     <iframe src="user/edital.html"></iframe>
