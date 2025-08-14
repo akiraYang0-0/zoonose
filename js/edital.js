@@ -1,3 +1,4 @@
+// Função para cortar o texto mantendo o sentido
 function cortarTexto(texto, limite) {
     if (!texto) return '';
     if (texto.length <= limite) return texto;
@@ -11,19 +12,19 @@ fetch('user/edital.html')
   .then(html => {
     let parser = new DOMParser();
     let doc = parser.parseFromString(html, 'text/html');
-    let secoes = doc.querySelectorAll('section');
-    let container = document.getElementById('listaEditais');
 
-    secoes.forEach(sec => {
-        let titulo = sec.querySelector('h2')?.textContent.trim() || 'Sem título';
-        let resumo = sec.querySelector('p')?.textContent.trim() || '';
-        let img = sec.querySelector('img')?.src || 'placeholder.jpg';
-        let data = sec.querySelector('.data')?.textContent || '';
+    let titulo = doc.querySelector('section h2')?.textContent.trim();
+    let resumo = doc.querySelector('section p')?.textContent.trim();
 
-    });
+    let card = document.getElementById('cardEdital');
+    card.querySelector('h3').textContent = titulo || 'Edital';
+    card.querySelector('p').textContent = cortarTexto(resumo, 60); // limite de 120 caracteres
   })
-  .catch(err => {
-    console.error(err);
-    document.getElementById('cardEdital').innerHTML = '<p>Não foi possível carregar os editais.</p>';
+  .catch(() => {
+    let card = document.getElementById('cardEdital');
+    card.querySelector('h3').textContent = 'Erro';
+    card.querySelector('p').textContent = 'Não foi possível carregar o edital.';
   });
 
+
+ 
