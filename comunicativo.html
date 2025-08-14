@@ -6,164 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adote um Amigo</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/edital.css">
 
-    <style>
-        body {
-             margin: 0;
-             padding: 0;
-             height: 100vh;
-            font-family: Arial, sans-serif;
-             background-image: url('assets/img/vacina.webp'); /* caminho da imagem */
-             background-size: cover; /* cobre toda a tela */
-             background-position: center; /* centraliza a imagem */
-             background-repeat: no-repeat; /* evita repetição */
-             color: white; /* texto branco para contraste */
-             text-align: center;
-        }
-        .main {
-            padding: 20px;
-        }
-       
-        .hero-text {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 12px;
-    max-width: 140px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    font-size: 14px;
-}
-
-/* Checkbox escondido */
-.hero-text input[type="checkbox"] {
-    display: none;
-}
-
-/* Estilo do link como botão discreto */
-.hero-text label {
-    display: inline-block;
-    background: #f0f0f0;
-    color: #333;
-    padding: 6px 10px;
-    border-radius: 8px;
-    font-size: 13px;
-    cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
-}
-.hero-text h2{
-     color: #333;
-    margin-bottom: 10px;
-}
-
-.hero-text label:hover {
-    background: #007bff;
-    color: white;
-}
-
-
-        
-        .btn-logout {
-            background: red;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-      
-        .services {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .services {
-    display:-moz-grid-group;
-    justify-content: center;
-    gap: 20px; /* espaçamento entre os cards */
-    flex-wrap: wrap; /* quebra em linha nova no celular */
-    padding: 20px;
-}
-
-
-.service {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 37px;
-  max-width: 311px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.service:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-.service h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.service p {
-    color: #555;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-.service-button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.service-button:hover {
-    background-color: #e65500;
-    transform: scale(1.05);
-}
-
-        .service-button {
-            padding: 10px 15px;
-            margin-top: 10px;
-            background: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Estilo do menu */
-        .header {
-            background-color: #f5f5f5;
-            padding: 10px;
-            text-align: center;
-        }
-        .header .logo h1 {
-            margin: 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-        }
-        nav ul li a {
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            color: black;
-        }
-        
-    </style>
+   
 </head>
 <body>
 
@@ -203,58 +48,27 @@
     </section>
 </main>
 
+<div class="card" id="cardEdital"></div>
 
-     <div class="card" id="cardEdital">
-        <style>
-.card {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 30px;
-  width: 500px;
-  text-align: center;
-  border-radius: 40px;
-  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  margin: 50px auto; /* <- centraliza horizontalmente */
-  min-height: 35vh;
+<button class="card-button" onclick="window.location.href='user/edital.html'">Ver mais</button>
 
-}
+<script>
+    document.getElementById("btnVacina").addEventListener("click", function() {
+        alert("Mostrando datas de vacinação...");
+    });
 
-.card iframe {
-    border: none;           /* Remove a borda */
-    width: 100%;             /* Faz o iframe ocupar toda a largura do card */
-    height: 400px;           /* Ajuste o tamanho */
-    overflow: visible;       /* Garante que não corte o conteúdo */
-}
-.card header{
-            background-color: #ffffff;
+    document.getElementById("btnLogin").addEventListener("click", function() {
+        window.location.href ="index.html";
+    });
 
-}
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-  .card-button {
-            padding: 10px 15px;
-            margin-top: 30px;
-            background: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-                        margin-top: 10px;
-
-        }
-        </style>
-
-    <iframe src="user/edital.html"></iframe>
-    <button class="card-button" onclick="window.location.href='user/edital.html'">Ver mais</button>
-</div>
+    document.getElementById("btnAgendar").addEventListener("click", function() {
+        alert("Abrindo agendamento de consulta...");
+    });
+</script>
 
    <script>
         document.getElementById("card-button").addEventListener("click", function(){
-            window.location.href = "user/edital.html"
+            window.location.href = "./user/edital.html"
         });
 
 
@@ -279,6 +93,7 @@
     });
     
 </script>
+<script src="js/edital.js" defer></script>
 
 </body>
 </html>
