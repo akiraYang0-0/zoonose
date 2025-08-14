@@ -1,0 +1,23 @@
+ /* 
+  bottons --> login/agenda/vacina    
+
+ document.getElementById("logoutBtn").addEventListener("click", function() {
+        alert("Você foi deslogado.");
+    });
+
+    document.getElementById("btnAcessar").addEventListener("click", function() {
+                    window.location.href = "detalhes.html";
+    });
+
+    document.getElementById("btnVacina").addEventListener("click", function() {
+        alert("Mostrando datas de vacinação...");
+    });
+
+    document.getElementById("btnLogin").addEventListener("click", function() {
+        window.location.href ="index.html";
+    });
+
+    document.getElementById("btnAgendar").addEventListener("click", function() {
+        alert("Abrindo agendamento de consulta...");
+    });
+    */

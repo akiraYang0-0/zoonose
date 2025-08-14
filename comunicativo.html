@@ -1,27 +1,20 @@
-
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adote um Amigo</title>
-        <link rel="stylesheet" href="css/edital.css">
-
-   
+    <link rel="stylesheet" href="css/edital.css">
 </head>
 <body>
 
-
 <main class="main">
     <section>
-       <div class="hero-text">
-    <h2>Adote um Amigo</h2>
-    
-    <input type="checkbox" id="acessar" onclick="if(this.checked){window.location.href='detalhes.html';}">
-    <label for="acessar">Acesse aqui</label>
-</div>
-
+        <div class="hero-text">
+            <h2>Adote um Amigo</h2>
+            <input type="checkbox" id="acessar" onclick="if(this.checked){window.location.href='detalhes.html';}">
+            <label for="acessar">Acesse aqui</label>
+        </div>
     </section>
     
     <section class="services">
@@ -43,14 +36,10 @@
             <button class="service-button" id="btnAgendar">Agendar</button>
         </div>
 
-
-
+        <!-- Novo Card de Notícias -->
+        <div class="service" id="cardEdital"></div>
     </section>
 </main>
-
-<div class="card" id="cardEdital"></div>
-
-<button class="card-button" onclick="window.location.href='user/edital.html'">Ver mais</button>
 
 <script>
     document.getElementById("btnVacina").addEventListener("click", function() {
@@ -66,33 +55,6 @@
     });
 </script>
 
-   <script>
-        document.getElementById("card-button").addEventListener("click", function(){
-            window.location.href = "./user/edital.html"
-        });
-
-
-    document.getElementById("logoutBtn").addEventListener("click", function() {
-        alert("Você foi deslogado.");
-    });
-
-    document.getElementById("btnAcessar").addEventListener("click", function() {
-                    window.location.href = "detalhes.html";
-    });
-
-    document.getElementById("btnVacina").addEventListener("click", function() {
-        alert("Mostrando datas de vacinação...");
-    });
-
-    document.getElementById("btnLogin").addEventListener("click", function() {
-        window.location.href ="index.html";
-    });
-
-    document.getElementById("btnAgendar").addEventListener("click", function() {
-        alert("Abrindo agendamento de consulta...");
-    });
-    
-</script>
 <script src="js/edital.js" defer></script>
 
 </body>
