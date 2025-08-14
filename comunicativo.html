@@ -221,13 +221,17 @@
   min-height: 35vh;
 
 }
+
 .card iframe {
     border: none;           /* Remove a borda */
     width: 100%;             /* Faz o iframe ocupar toda a largura do card */
-    height: 400px;           /* Ajuste para o tamanho que quiser */
+    height: 400px;           /* Ajuste o tamanho */
     overflow: visible;       /* Garante que não corte o conteúdo */
 }
+.card header{
+            background-color: #ffffff;
 
+}
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -242,15 +246,14 @@
                         margin-top: 10px;
 
         }
-        
         </style>
 
-    <iframe src="user/edital.html"></iframe>
+<iframe src="user/cardEdital.html"></iframe>
     <button class="card-button" onclick="window.location.href='user/edital.html'">Ver mais</button>
 </div>
 
    <script>
-        document.getElementById("cardEdital").addEventListener("click", function(){
+        document.getElementById("card-button").addEventListener("click", function(){
             window.location.href = "user/edital.html"
         });
 
