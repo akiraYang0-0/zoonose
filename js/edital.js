@@ -28,7 +28,7 @@
                 noticiasHTML += `
                     <div class="noticia">
                         <strong>${titulo}</strong>
-                        <p>${cortarTexto(texto, 60)}</p>
+                        <p>${cortarTexto(texto, 45)}</p>
                     </div>
                 `;
             });
